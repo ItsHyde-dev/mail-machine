@@ -1,0 +1,16 @@
+.animated-divider {
+  width: 80%;
+  margin: auto;
+  height: 1px;
+  background-color: rgba(221, 219, 241, 0.20);
+  animation: animated-divider 1.5s linear;
+}
+
+@keyframes animated-divider {
+  0% {
+    transform: scaleX(0%);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}
