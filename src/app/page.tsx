@@ -1,16 +1,19 @@
-"use client"
+'use client'
 
 import { redirect } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Root() {
-
   // replace with token once that is implemented
-  const isLoggedIn = !!localStorage.getItem('isLoggedIn')
 
-  if (!isLoggedIn) {
-    redirect('/login')
-  }
+  useEffect(() => {
+    console.log("use effect was called in root");
+    const isLoggedIn = !!localStorage.getItem("isLoggedIn");
 
-  redirect('/home')
+    if (!isLoggedIn) {
+      redirect("/login");
+    }
+
+    redirect("/home");
+  }, []);
 }
-
