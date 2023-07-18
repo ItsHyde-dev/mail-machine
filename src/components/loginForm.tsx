@@ -21,7 +21,7 @@ export default function LoginForm() {
         <input
           type="password"
           ref={password}
-          className="text-xl text-lilac focus:outline-none focus:outline-lilac focus:outline-1 bg-light-grey rounded-[5px] h-[35px] px-[10px]"
+          className="text-xl text-lilac focus:outline-none focus:outline-lilac focus:outline-1 bg-light-outlinegrey rounded-[5px] h-[35px] px-[10px]"
         />
       </div>
       <div className="flex flex-col">

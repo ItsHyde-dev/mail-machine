@@ -70,7 +70,7 @@ function LeftToolbar() {
 
 function TemplateListing(templates: { name: string; description: string }[]) {
   return (
-    <section className="mt-[60px] w-[500px] h-full">
+    <section className="mt-[60px] mb-[20px] w-[500px] h-5/6">
       <div className="text-2xl font-semibold">Select a template</div>
       <div className="bg-light-grey h-full px-[40px] py-[30px] mt-[20px] rounded-[10px]">
         {templates.map((template) => {
