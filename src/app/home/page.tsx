@@ -7,6 +7,7 @@ import {
   faHome,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import MailArea from "@/components/homepageMailArea";
 
 interface TemplateListing {
   name: string;
@@ -29,7 +30,7 @@ async function getTemplates(): Promise<TemplateListing[]> {
     setTimeout(() => {
       resolve(data);
     }, 1000);
-  })
+  });
 }
 
 export default async function Home() {
@@ -39,9 +40,10 @@ export default async function Home() {
     <main className="text-white h-screen flex flex-col">
       {NavBarVariantTwo("Welcome")}
 
-      <div className="flex flex-row items-start h-screen">
+      <div className="flex flex-row items-start h-screen gap-[40px]">
         <LeftToolbar />
         {TemplateListing(templates)}
+        <MailArea />
       </div>
     </main>
   );
@@ -68,7 +70,7 @@ function LeftToolbar() {
 
 function TemplateListing(templates: { name: string; description: string }[]) {
   return (
-    <section className="ml-[40px] mt-[60px] w-[500px] h-full">
+    <section className="mt-[60px] w-[500px] h-full">
       <div className="text-2xl font-semibold">Select a template</div>
       <div className="bg-light-grey h-full px-[40px] py-[30px] mt-[20px] rounded-[10px]">
         {templates.map((template) => {
@@ -88,3 +90,4 @@ function TemplateListing(templates: { name: string; description: string }[]) {
     </section>
   );
 }
+
