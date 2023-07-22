@@ -5,7 +5,7 @@ import { faRobot } from "@fortawesome/free-solid-svg-icons";
 
 export function NavBarVariantOne() {
   return (
-    <section className="flex flex-column items-baseline p-[40px] w-full">
+    <section className="flex flex-column items-baseline p-[40px] pb-[10px] w-full">
       <div className="text-3xl text-white font-mysans font-medium">Mail Machine v.1.0</div>
       <section className="flex flex-row gap-[30px] ml-auto">
         <Link

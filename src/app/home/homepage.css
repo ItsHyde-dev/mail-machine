@@ -14,3 +14,25 @@
     transform: scaleX(100%);
   }
 }
+
+.hollow-bullet {
+  list-style-type: none;
+}
+
+li::before {
+  display: inline-block;
+
+  content: "";
+  width: 12px;
+  height: 12px;
+
+  border: 1px solid white;
+  border-radius: 50%;
+
+  margin-right: 20px;
+}
+
+li {
+  margin-bottom: 30px;
+}
+

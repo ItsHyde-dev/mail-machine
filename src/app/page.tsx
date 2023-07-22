@@ -7,7 +7,6 @@ export default function Root() {
   // replace with token once that is implemented
 
   useEffect(() => {
-    console.log("use effect was called in root");
     const isLoggedIn = !!localStorage.getItem("isLoggedIn");
 
     if (!isLoggedIn) {

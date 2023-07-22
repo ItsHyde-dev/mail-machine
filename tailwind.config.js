@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         "black-light": "#232323",
         "lilac": "#DDDBF1",
+        "lilac-800": "rgba(221, 219, 241, 0.8)",
         "light-green": "#48E5C2",
         "dark-green": "#08AF93",
         "grey": "#6B7F82",
